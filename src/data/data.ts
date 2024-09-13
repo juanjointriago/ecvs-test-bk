@@ -1,0 +1,94 @@
+import { Contact } from "../models/contact.model";
+
+export const contacts :Contact[] = [
+    {
+      id: 1,
+      first_name: "Philly",
+      last_name: "Hatton",
+      email: "phatton0@cnbc.com",
+      gender: "Female",
+      ip_address: "208.137.82.241",
+      phone_number: "446-506-4003"
+    },
+    {
+      id: 2,
+      first_name: "Morissa",
+      last_name: "Redmell",
+      email: "mredmell1@wordpress.org",
+      gender: "Female",
+      ip_address: "138.155.65.205",
+      phone_number: "449-660-7221"
+    },
+    {
+      id: 3,
+      first_name: "Lilith",
+      last_name: "Callaway",
+      email: "lcallaway2@google.pl",
+      gender: "Female",
+      ip_address: "48.223.53.5",
+      phone_number: "906-370-6271"
+    },
+    {
+      id: 4,
+      first_name: "Sukey",
+      last_name: "Krikorian",
+      email: "skrikorian3@so-net.ne.jp",
+      gender: "Female",
+      ip_address: "93.17.136.217",
+      phone_number: "573-311-0910"
+    },
+    {
+      id: 5,
+      first_name: "Sherye",
+      last_name: "McMenamy",
+      email: "smcmenamy4@msu.edu",
+      gender: "Female",
+      ip_address: "173.126.223.161",
+      phone_number: "157-568-0029"
+    },
+    {
+      id: 6,
+      first_name: "Jarret",
+      last_name: "Fforde",
+      email: "jfforde5@youku.com",
+      gender: "Male",
+      ip_address: "224.50.195.167",
+      phone_number: "813-189-0443"
+    },
+    {
+      id: 7,
+      first_name: "Dev",
+      last_name: "Stoven",
+      email: "dstoven6@usgs.gov",
+      gender: "Male",
+      ip_address: "3.18.37.60",
+      phone_number: "736-128-0817"
+    },
+    {
+      id: 8,
+      first_name: "Harry",
+      last_name: "Cake",
+      email: "hcake7@yellowpages.com",
+      gender: "Male",
+      ip_address: "214.200.219.58",
+      phone_number: "882-672-7399"
+    },
+    {
+      id: 9,
+      first_name: "Sada",
+      last_name: "Beaufoy",
+      email: "sbeaufoy8@usatoday.com",
+      gender: "Bigender",
+      ip_address: "198.189.146.146",
+      phone_number: "398-556-0158"
+    },
+    {
+      id: 10,
+      first_name: "Nissa",
+      last_name: "De Laspee",
+      email: "ndelaspee9@archive.org",
+      gender: "Female",
+      ip_address: "188.233.243.50",
+      phone_number: "469-930-2448"
+    }
+  ]
