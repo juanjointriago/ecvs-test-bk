@@ -1,4 +1,6 @@
 import express, { Express } from "express";
+import path from "path";
+import cors from "cors";
 import { createServer, Server as HttpServer } from "http";
 
 import contactRoutes from "../routes/contact.routes";
@@ -16,7 +18,14 @@ export class MainServer {
   constructor() {
     this.app = express();
     this.port = process.env.PORT ?? "8095";
+    this.middlewares();
     this.server = createServer(this.app);
+  }
+
+  middlewares(): void {
+    this.app?.use(express.json());
+    this.app?.use(express.static(path.join(__dirname, "public")));
+    this.app?.use(cors());
   }
 
   //routes
@@ -24,13 +33,11 @@ export class MainServer {
     this.app?.use(this.apiPaths.contacts, contactRoutes);
   }
 
-
   //init server
   async execute() {
     this.routes();
-    this,
-      this.server?.listen(this.port, () => {
-        console.log(`Server running on http://localhost:${this.port}`);
-      });
+    this.server?.listen(this.port, () => {
+      console.log(`Server running on http://localhost:${this.port}`);
+    });
   }
 }

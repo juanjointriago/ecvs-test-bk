@@ -5,6 +5,6 @@ import { getAllContacts, getContactByField } from '../controllers/contact.contro
 const router = Router();
 
 router.get('/', getAllContacts);
-router.get('/:field/:value', getContactByField);
+router.post('/', getContactByField);
 
 export default router;

@@ -4,15 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc --build tsconfig.json",
-    "build:watch": "tsc --build tsconfig.json --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./dist/app.js",
-    "dev": "nodemon ./dist/app.js"
+    "dev": "nodemon ./dist/app.js",
+    "tscw": "tsc --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "typescript": "^5.6.2"
   },
